@@ -1,0 +1,22 @@
+.FollowerList {
+  margin-top: 1rem;
+}
+
+.seeMore {
+  display: flex;
+  justify-content: center;
+}
+.FollowerCard > div > span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: orange;
+}
+
+.FollowerCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.FollowerCard > div > span:hover {
+  cursor: pointer;
+}

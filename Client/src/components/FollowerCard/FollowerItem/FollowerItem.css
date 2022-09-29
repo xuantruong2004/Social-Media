@@ -1,0 +1,59 @@
+.FollowerItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.FollowerItem > img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.FollowerItem .info {
+  font-size: 12px;
+}
+
+.info > p {
+  margin: 0;
+}
+.info > p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/* .FollowerItem > button {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: linear-gradient(106.23deg, #f99827, #f95f53);
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s linear;
+}
+.FollowerItem > button:hover {
+  cursor: pointer;
+  color: #f99827;
+  background: white;
+  border: 1px solid #f99827;
+} */
+
+.fc-btn {
+  position: absolute;
+  right: 0;
+  height: 2rem;
+  padding: 0 20px;
+}
+.fc-btn.unFollow {
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+}
+.fc-btn.unFollow:hover {
+  background: var(--buttonBg);
+  border: 2px solid var(--orange);
+  color: white;
+}

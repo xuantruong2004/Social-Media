@@ -1,0 +1,143 @@
+.Chat {
+  position: relative;
+  display: grid;
+  grid-template-columns: 22% auto;
+  gap: 1rem;
+}
+
+.Left-side-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Chat-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--cardColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 80vh;
+  min-height: 80vh;
+  overflow: scroll;
+
+  .chat-body {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.Chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Right-side-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.conversation:hover {
+  background: #80808038;
+  cursor: pointer;
+}
+
+.conversation {
+  border-radius: 0.5rem;
+  padding: 10px;
+}
+
+.conversation > div {
+  position: relative;
+  display: flex;
+}
+
+.online-dot {
+  background-color: greenyellow;
+  border-radius: 50%;
+  position: absolute;
+  left: 2rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.chatbox-empty-message {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.conversation .name {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  span:nth-of-type(1) {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Chat {
+    grid-template-columns: 16% auto;
+  }
+  .follower.conversation > div > .name {
+    display: none;
+  }
+}
+
+.Right-side-chat {
+  .navIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    > img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    a > img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+    svg:hover {
+      cursor: pointer;
+    }
+  }
+
+  .r-button {
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+  }
+}
+
+.follower > div {
+  position: relative;
+  display: flex;
+
+  .name {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    span:nth-of-type(1) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.follower.conversation .onlineImage {
+  border-radius: 50%;
+}
